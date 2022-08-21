@@ -2,4 +2,4 @@
 
 ## Screenshot
 
-![home screenshot](screenshot/Home.jpg)
+<img src="screenshot/Home.jpg" width="200">
