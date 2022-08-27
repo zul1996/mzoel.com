@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+    background-color: #06113C;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 68px 54px;
+}
+
+.img-logo {
+  width: 64px;
+  height: 78px;
+  background: none;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a{
+  padding: 0 10px;
+  size: 45px;
+  font-size: 16px;
+  color: #FF8C32;
+}
+
+a, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-resume{
+    
+    border: 3px solid;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+
+  
+.hero-section {
+  display: flex;
+  padding: 88px 228px;
+}
