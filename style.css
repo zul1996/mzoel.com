@@ -1,17 +1,33 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
 }
 
 body {
   background-color: #06113c;
 }
 
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+/* Navbar */
+
 .navbar {
   display: flex;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 80px;
   justify-content: space-between;
   align-items: center;
-  padding: 68px 54px;
 }
 
 .img-logo {
@@ -23,46 +39,176 @@ body {
 
 .nav-menu {
   display: flex;
+  position: relative;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 li a {
-  padding: 0 30px;
-  size: 45px;
-  font-size: 24px;
+  padding: 0 45px;
+  font-size: 16px;
   color: #ff8c32;
 }
 
 a,
 a:focus {
   text-decoration: none;
-  color: inherit;
-}
-
-.btn-resume {
-  border: 3px solid;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-/* Hero Section */
-
-.hero-section {
-  display: flex;
-  padding: 88px 228px;
 }
 
 .border-gradient {
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 5px;
+  position: relative;
+  top: -9px;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
-.border-gradient-purple {
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  padding: 2px; /* control the border thickness */
+  background: linear-gradient(45deg, #db36a4, #f7ff00);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* hero-section */
+
+.hero-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 350px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+}
+
+.profile-p {
+  color: #ff8c32;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.profile-name {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 53px;
+  line-height: 63px;
+  background: linear-gradient(90.93deg, #f7ff00 -16.15%, #db36a4 102.24%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: -2px 2px 15px rgba(219, 54, 164, 0.5);
+  padding-bottom: 20px;
+}
+
+.profile-job {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 50px;
+  color: #dddddd;
+  padding: 0 0 20px 0;
+}
+
+.profile-description {
+  max-width: 550px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+.gradient-btn {
+  height: 4rem;
+  width: 12rem;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 40px;
+  background: linear-gradient(90.93deg, #f7ff00 -16.15%, #db36a4 102.24%);
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.gradient-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  background: linear-gradient(90.93deg, #f7ff00 -16.15%, #db36a4 102.24%);
+  color: white;
+  z-index: -1;
+  filter: blur(0px);
+  transition: 0.5s ease;
+}
+
+.gradient-btn:hover::after {
+  filter: blur(15px);
+}
+
+/* About-section */
+
+.about-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.about-vertical {
+  margin: 0 25px;
+  color: #ff8c32;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  display: block;
+  bottom: 0;
+  width: 40px;
+  height: 250px;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-weight: bolder;
+}
+
+.line-vertical {
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  width: 0.1px;
+  height: 105px;
+  border: 1px solid #ff8c32;
+  margin: 3px;
+  display: inline-block;
+}
+
+.about-profile {
+  width: 100%;
 }
