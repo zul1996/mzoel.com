@@ -17,10 +17,12 @@ body{
   width: 64px;
   height: 78px;
   background: none;
+  padding-left: 42px;
 }
 
 .nav-menu {
   display: flex;
+  
 }
 
 ul {
@@ -30,9 +32,9 @@ ul {
 }
 
 li a{
-  padding: 0 10px;
+  padding: 0 30px;
   size: 45px;
-  font-size: 16px;
+  font-size: 24px;
   color: #FF8C32;
 }
 
@@ -49,9 +51,11 @@ a, a:focus {
     
 }
 
+/* Hero Section */
 
-  
 .hero-section {
   display: flex;
   padding: 88px 228px;
 }
+
+
