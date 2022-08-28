@@ -114,7 +114,61 @@ a:focus {
   padding-bottom: 20px;
 }
 
-.profile-job {
+/* animation text hero  */
+
+.hero {
+  display: flex;
+}
+.hero .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.hero .dynamic-txts {
+  margin-left: 25px;
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: #ff8c32;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: -10px;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 130%;
+  width: 100%;
+  background: #06113c;
+  border-left: 2px solid #ff8c32;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+/* .profile-job {
   font-family: "Karla";
   font-style: normal;
   font-weight: 500;
@@ -122,7 +176,7 @@ a:focus {
   line-height: 50px;
   color: #dddddd;
   padding: 0 0 20px 0;
-}
+} */
 
 .profile-description {
   max-width: 550px;
@@ -179,9 +233,9 @@ a:focus {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  height: 90vh;
   margin: 0 auto;
   justify-content: space-between;
+  padding: 0 0 30px 0;
 }
 
 .about-vertical {
@@ -210,5 +264,48 @@ a:focus {
 }
 
 .about-profile {
+  margin: 0 50px;
+}
+
+.about-profile,
+p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  padding-bottom: 35px;
+  color: #ffffff;
+}
+
+/* Skill-section */
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 0 0 30px 0;
+}
+
+.skills-section h2 {
+  font-family: "Karla";
+  color: #ff8c32;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.skills-section p {
+  font-family: "Karla";
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #eeeeee;
 }
