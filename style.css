@@ -2,8 +2,9 @@
   padding: 0;
   margin: 0;
 }
-body{
-    background-color: #06113C;
+
+body {
+  background-color: #06113c;
 }
 
 .navbar {
@@ -22,7 +23,6 @@ body{
 
 .nav-menu {
   display: flex;
-  
 }
 
 ul {
@@ -31,24 +31,23 @@ ul {
   padding: 0;
 }
 
-li a{
+li a {
   padding: 0 30px;
   size: 45px;
   font-size: 24px;
-  color: #FF8C32;
+  color: #ff8c32;
 }
 
-a, a:focus {
-    text-decoration: none;
-    color: inherit;
+a,
+a:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
-.btn-resume{
-    
-    border: 3px solid;
-    padding: 10px;
-    border-radius: 20px;
-    
+.btn-resume {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 /* Hero Section */
@@ -58,4 +57,12 @@ a, a:focus {
   padding: 88px 228px;
 }
 
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
 
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
