@@ -83,7 +83,8 @@ a:focus {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  padding-bottom: 270px;
+  padding-left: 20px;
+  padding-bottom: 170px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -337,7 +338,7 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 h2.service-white {
@@ -376,7 +377,7 @@ h2.service-white {
 }
 
 footer {
-  margin-top: 350px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
