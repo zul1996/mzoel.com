@@ -988,15 +988,23 @@ footer a:hover i::after {
 
   /* Service */
 
+  .service-list {
+    display: flex;
+    flex-direction: column;
+  }
+
   .service-card {
     display: flex;
     font-family: "Karla", serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 550px;
+    font-size: 20px;
     line-height: 26px;
     flex-direction: column;
-    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
     background: rgba(247, 235, 235, 0.2);
     margin-top: 35px;
     padding: 25px 25px;
@@ -1005,10 +1013,6 @@ footer a:hover i::after {
     -webkit-backdrop-filter: blur(11px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-  }
-
-  .service-card p {
-    max-width: 250px;
   }
 
   footer {
