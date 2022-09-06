@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
       rel="stylesheet"
@@ -26,9 +27,9 @@
       <div>
         <ul class="nav-menu">
           <li><a href="#home">Home</a></li>
-          <li><a href="#portofolio">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#contact">contact</a></li>
           <li>
             <a class="border-gradient" href="#resume"> Resume </a>
           </li>
@@ -37,7 +38,7 @@
     </nav>
 
     <!-- Hero section -->
-    <section class="hero-section">
+    <section id="home" class="hero-section">
       <div class="profile-section">
         <p class="profile-p">Hi, My name is</p>
 
@@ -66,7 +67,7 @@
       </div>
     </section>
     <!-- About section -->
-    <section class="about-section">
+    <section id="about" class="about-section">
       <div>
         <img src="/assets/images/zul_avatar.jpg" alt="Zul-avatar" />
       </div>
@@ -87,7 +88,7 @@
       </div>
     </section>
     <!-- skills section -->
-    <section class="skills-section">
+    <section id="skill" class="skills-section">
       <h2>My skills</h2>
       <p>I use several programming languages and tools to make program</p>
       <div class="container-logo">
@@ -162,7 +163,7 @@
     </section>
   </body>
 
-  <footer>
+  <footer id="contact">
     <h2>You have any project ?</h2>
     <a
       class="footer-border-gradient gradient-color"

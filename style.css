@@ -8,6 +8,7 @@
 
 body {
   background-color: #06113c;
+  scroll-behavior: smooth;
 }
 
 /* p {
