@@ -6,6 +6,14 @@
   font: inherit;
 }
 
+a:hover {
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
 body {
   background-color: #06113c;
   scroll-behavior: smooth;
@@ -50,8 +58,14 @@ ul {
 
 li a {
   font-family: "Karla", serif;
+  font-weight: 700;
   font-size: 26px;
   color: #ff8c32;
+}
+
+li a:hover {
+  color: #db36a4;
+  font-size: 30px;
 }
 
 a,
