@@ -27,6 +27,10 @@ body {
   line-height: 16px;
 } */
 
+header {
+  min-height: 100vh;
+}
+
 /* Navbar */
 
 .navbar {
@@ -97,13 +101,12 @@ a:focus {
 
 .hero-section {
   display: flex;
-  position: relative;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   max-width: 1200px;
-  padding-left: 20px;
-  padding-bottom: 170px;
   margin: 0 auto;
-  justify-content: space-between;
+  padding-top: 150px;
 }
 
 .profile-section {
@@ -251,13 +254,12 @@ a:focus {
 
 .about-section {
   display: flex;
-  position: relative;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-bottom: 40px;
 }
 
 .about-vertical {
@@ -302,6 +304,13 @@ a:focus {
 }
 
 /* Skill-section */
+
+.container-mix {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .skills-section {
   display: flex;
@@ -414,6 +423,7 @@ a:focus {
 footer {
   margin-top: 150px;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -605,7 +615,6 @@ footer a:hover i::after {
     max-width: 750px;
     padding-bottom: 170px;
     margin: 0 auto;
-    justify-content: space-between;
   }
 
   .profile-section {
